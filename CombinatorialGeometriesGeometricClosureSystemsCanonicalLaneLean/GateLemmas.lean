@@ -1,0 +1,14 @@
+import CombinatorialGeometriesGeometricClosureSystemsCanonicalLaneLean.BridgeLemmas
+
+namespace HautevilleHouse
+namespace CombinatorialGeometriesGeometricClosureSystemsCanonicalLaneLean
+
+def gateClosed (A : AdmissibleClass) : Prop :=
+  A.endpointSatisfied ∨ A.remainderRecorded
+
+theorem gate_from_admissible_class (A : AdmissibleClass) :
+    gateClosed A := by
+  exact A.gateWitness
+
+end CombinatorialGeometriesGeometricClosureSystemsCanonicalLaneLean
+end HautevilleHouse
